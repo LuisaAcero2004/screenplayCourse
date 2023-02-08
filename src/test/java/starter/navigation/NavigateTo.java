@@ -9,4 +9,9 @@ public class NavigateTo {
         return Task.where("{0} opens the Wikipedia home page",
                 Open.browserOn().the(WikipediaHomePage.class));
     }
+
+    public static Performable theSauceHomePage() {
+        return Task.where("{0} opens the Sauce home page",
+                Open.browserOn().the(SauceHomePage.class));
+    }
 }
